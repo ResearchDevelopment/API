@@ -1,0 +1,25 @@
+﻿<div class="card">
+    <div class="card-header card-header-rose">
+        <h4 class="card-title">ورود به سیستم</h4>
+    </div>
+</div>
+<form asp-action="Login" asp-controller="Account" method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="form-group">
+                <label class="bmd-label-floating">نام کاربری</label>
+                <input type="text" class="form-control" name="Username">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label class="bmd-label-floating">رمز عبور</label>
+                <input type="password" class="form-control" name="Password">
+            </div>
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-info pull-right">ورود</button>
+    <div class="clearfix"></div>
+</form>
