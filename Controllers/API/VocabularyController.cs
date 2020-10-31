@@ -27,6 +27,7 @@ namespace ShadiWebApplication.Controllers.API
         {
             var x = this.VocabularyRepository.GetVocabs(1, 10);
             return Ok(x);
+            ////
         }
 
     }
